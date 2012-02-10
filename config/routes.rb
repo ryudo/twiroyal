@@ -1,7 +1,10 @@
 Twiloyal::Application.routes.draw do
 
+  get "dashboard/index"
+
   match "/auth/:provider/callback" => "sessions#callback"
   match "/logout" => "sessions#destroy", :as => :logout
+  root to: 'dashboard#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
