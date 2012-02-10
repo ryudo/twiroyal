@@ -23,6 +23,7 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'pg'
 gem 'omniauth'
+gem 'omniauth-twitter'
 gem "rspec-rails"
 
 # To use ActiveModel has_secure_password
