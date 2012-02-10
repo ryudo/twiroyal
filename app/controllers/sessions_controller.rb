@@ -10,4 +10,10 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to root_url
   end
+
+
+  def failure
+    redirect_to dashboard_index_url, :alert => 'Sorry, there was something wrong with your login attempt. Please try again.'
+  end
+  
 end
